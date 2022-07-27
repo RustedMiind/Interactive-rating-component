@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 360px;
+    background: radial-gradient(ellipse at top, hsl(213, 17%, 21%), transparent),
+                radial-gradient(ellipse at bottom, hsl(212, 21%, 16%), transparent);
+    border-radius: 40px;
+    padding: 45px;
+}
+
+.top{
+    height: 70px;
+}
+.top img{
+    border-radius: 50px;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(43, 51, 58);
+    transition: 150ms;
+}
+.top img:hover{
+    cursor: pointer;
+    background-color: rgb(82, 98, 112);
+}
+.header{
+    font-size: 28px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.paragraph{
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    opacity: 0.5;
+}
+
+.rating{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating li{
+    margin: 20px 0;
+    border-radius: 50px;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    color: rgb(255, 255, 255, 60%);
+    background-color: rgb(43, 51, 58);
+    transition: 150ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.rating li:hover{
+    cursor: pointer;
+    background-color: rgb(82, 98, 112);
+}
+
+
+.button-container{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+}
+
+
+.submit{
+    margin-top: 10px;
+    background-color: hsl(25, 97%, 53%);
+    outline: none;
+    border: none;
+    border-radius: 200px;
+    width: 350px;
+    height:45px;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    transition: 150ms;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: hsl(25, 85%, 37%);
+}
+
+.checked{
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+.lg-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lg-icon img{
+    width: 180px;
+}
+.selection-message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.selection-message p{
+    font-size: 16px;
+    color: hsl(25, 97%, 53%);
+    padding: 10px 15px;
+    border-radius: 200px;
+    background-color:  hsl(210, 20%, 22%);
+}
+.thanks-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.thanks-message h2{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.75px;
+    margin:  0 0 10px 0;
+}
+.thanks-message p{
+    width: 90%;
+    font-size: 16px;
+    opacity: 0.6;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+    text-align: center;
+}
+
+#none-message{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 29, 29);
+    font-size: 22px;
+    font-weight: 700;
+}
